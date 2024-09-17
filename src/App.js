@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { StyledEngineProvider } from '@mui/material/styles';
+import TopNavBar from './components/TopNavBar/TopNavBar';
+import SignInBanner from './components/SignInBanner/SignInBanner';
+import WelcomeImage from './components/WelcomeImage/WelcomeImage';
+import InformationTab from './components/InformationTab/InformationTab';
+import CatergoriesLinks from './components/CategoriesLinks/CatergoriesLinks';
+import InternshipTab from './components/InternshipTab/InternshipTab';
+import JobCategoryLinks from './components/JobCategoryLinks/JobCategoryLinks';
+import PostJobBanner from './components/PostJobBanner/PostJobBanner';
+import SoftwareToolsTab from './components/SoftwareToolsTab/SoftwareToolsTab';
+import SoftwareToolsLinks from './components/SoftwareToolsLinks/SoftwareToolsLinks';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+
+    <h1>Lungelo linkedin Project</h1>
+
+    <TopNavBar/>
+    <SignInBanner/>
+    <WelcomeImage/>
+    <InformationTab/>
+    <CatergoriesLinks/>
+    <InternshipTab/>
+    <JobCategoryLinks/> 
+    <PostJobBanner/>
+    <SoftwareToolsTab/>
+    <SoftwareToolsLinks/>
+    
+
     </div>
   );
 }
